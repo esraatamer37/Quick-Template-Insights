@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD to HTML Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 5px;
+        }
+        th {
+            background-color: #b2babd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Table</h2>
+    <table>
+        <tr>
+            <th>Student_Num</th>
+            <th>Fname</th>
+            <th>Lname</th>
+            <th>NID</th>
+            <th>Address</th>
+            <th>Bdate</th>
+            <th>CCNum</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>123456</td>
+            <td>123 Main St</td>
+            <td>1990-01-01</td>
+            <td>CC1234</td>
+        </tr>
+
+    </table>
+
+
+    <h2>Enrollment Table</h2>
+    <table>
+        <tr>
+            <th>Student_Num</th>
+            <th>Course_name</th>
+            <th>Date of Enrollment</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Computer Science</td>
+            <td>2024-09-01</td>
+        </tr>
+
+    </table>
+
+
+    <h2>Lecturer Table</h2>
+    <table>
+        <tr>
+            <th>Lecturer_ID</th>
+            <th>L_LastName</th>
+            <th>L_FirstName</th>
+            <th>L_Address</th>
+            <th>L_Email</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Smith</td>
+            <td>John</td>
+            <td>456 Main St</td>
+            <td>john.smith@example.com</td>
+        </tr>
+
+    </table>
+
+    <h2>Lecture Table</h2>
+    <table>
+        <tr>
+            <th>Lecture_ID</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th>Subject_code</th>
+            <th>Lecturer_ID</th>
+            <th>CCNum</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>10:00 AM</td>
+            <td>2024-09-02</td>
+            <td>CS101</td>
+            <td>1</td>
+            <td>CC1234</td>
+        </tr>
+    </table>
+
+    <h2>Subjects Table</h2>
+    <table>
+        <tr>
+            <th>Subject_code</th>
+            <th>Subject_Uname</th>
+            <th>Subject_Udesc</th>
+        </tr>
+        <tr>
+            <td>CS101</td>
+            <td>Computer Science 101</td>
+            <td>Introduction to Computer Science</td>
+        </tr>
+    </table>
+
+</body>
+</html>
